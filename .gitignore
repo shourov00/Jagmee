@@ -1,0 +1,21 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+# Project exclude paths
+/gradle-build/
+/gradle-build/AlivcMedia/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/gradle-build/AliyunCrop/crop/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/gradle-build/AliyunEditor/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/gradle-build/AliyunFileDownLoader/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/gradle-build/AliyunRecorder/record/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/gradle-build/AliyunSVideoBase/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/gradle-build/AliyunSvideoMusic/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/gradle-build/AliyunVideoCommon/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
+/gradle-build/app/intermediates/javac/debug/compileDebugJavaWithJavac/classes/

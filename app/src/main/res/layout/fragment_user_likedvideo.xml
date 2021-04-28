@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_65"
+    tools:context="com.jagmee.app.Profile.UserVideos.UserVideo_F">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/recylerview"
+      android:scrollingCache="true"
+      android:layout_marginTop="10dp"
+      />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/no_data_layout"
+        android:paddingTop="50dp"
+        android:visibility="gone"
+        android:background="@color/black_65">
+
+      <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:layout_below="@+id/img_no_job"
+          android:layout_centerHorizontal="true"
+          android:text="Oops!"
+          android:textColor="@color/lightblack"
+          android:id="@+id/whoops"
+          android:textSize="22sp"/>
+
+      <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:layout_below="@+id/whoops"
+          android:layout_centerHorizontal="true"
+          android:gravity="center"
+          android:textColor="@color/lightblack"
+          android:layout_marginLeft="55dp"
+          android:layout_marginRight="55dp"
+          android:text="There is no liked videos so far."
+          android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+
+  </RelativeLayout>
+
+
+</FrameLayout>

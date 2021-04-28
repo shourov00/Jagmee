@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jagmee.app">
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera2.full"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_DOCUMENTS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name="com.jagmee.app.SimpleClasses.TicTic"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:screenOrientation="portrait"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="allowBackup,supportsRtl">
+        <!--<activity android:name=".alivcsolution.activity.UploadActivity"></activity>-->
+        <activity android:name="com.jagmee.app.alivcsolution.activity.PublishActivity" />
+        <activity android:name="com.jagmee.app.alivcsolution.activity.AlivcLittlePreviewActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6612555653668750~6542459822" />
+
+        <activity android:name="com.jagmee.app.customcrash.CustomCrashActivity">
+            <intent-filter>
+
+                <!-- ... -->
+                <action android:name="cat.ereza.customactivityoncrash.ERROR" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" /> <!-- <activity -->
+        <!-- android:name="cat.ereza.customactivityoncrash.activity.DefaultErrorActivity" -->
+        <!-- android:process=":error_activity" -->
+        <!-- android:theme="@style/AppTheme" /> -->
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.jagmee.app.Accounts.Request_Varification_F"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.jagmee.app.SoundLists.VideoSound_A" />
+        <activity
+            android:name="com.jagmee.app.Video_Recording.DraftVideos.DraftVideos_A"
+            android:screenOrientation="portrait"
+            android:theme="@style/white_status"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.jagmee.app.Video_Recording.GallerySelectedVideo.GallerySelectedVideo_A"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.jagmee.app.Accounts.Login_A"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.jagmee.app.Splash_A"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jagmee.app.Main_Menu.MainMenuActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparent_status"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.jagmee.app.WatchVideos.WatchVideos_F"
+            android:hardwareAccelerated="true"
+            android:parentActivityName="com.jagmee.app.Main_Menu.MainMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/black_status"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="bringthings.com"
+                    android:pathPrefix="/API/"
+                    android:scheme="http" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jagmee.app.Main_Menu.MainMenuActivity" />
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jagmee.app.Video_Recording.Video_Recoder_A"
+            android:screenOrientation="portrait"
+            android:theme="@style/black_status"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.jagmee.app.Video_Recording.Preview_Video_A"
+            android:screenOrientation="portrait"
+            android:theme="@style/black_status"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.jagmee.app.Video_Recording.Post_Video_A"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.jagmee.app.SoundLists.SoundList_Main_A"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_tic" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/redcolor" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <!--
+<provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="external_storage_root"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name="com.jagmee.app.Services.Upload_Service"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="startservice" />
+            </intent-filter>
+        </service>
+        <service android:name="com.jagmee.app.Firebase_Notification.Notification_Receive">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:hardwareAccelerated="true" />
+    </application>
+
+</manifest>

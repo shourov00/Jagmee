@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="bottom">
+
+    <LinearLayout
+        android:id="@+id/bottom_tab_bg"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="@dimen/alivc_little_bottom_tab_more_width">
+
+        <FrameLayout
+            android:id="@+id/tab_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/tab_home_icon"
+                android:layout_width="@dimen/alivc_common_size_icon_20"
+                android:layout_height="@dimen/alivc_common_size_icon_20"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/alivc_common_margin_5"
+                android:gravity="center"
+                android:src="@mipmap/ic_home_tab" />
+
+            <TextView
+                android:id="@+id/alivc_little_tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/alivc_common_margin_8"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center"
+                android:text="Home"
+                android:textColor="@color/alivc_common_white"
+                android:textSize="@dimen/alivc_common_font_10" />
+
+            <ImageView
+                android:id="@+id/tab_home_underline"
+                android:layout_width="@dimen/alivc_little_bottom_tab_underline_width"
+                android:layout_height="@dimen/alivc_little_bottom_tab_underline_height"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/alivc_bottom_tab_item_selector" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/tab_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/tab_search_icon"
+                android:layout_width="@dimen/alivc_common_size_icon_20"
+                android:layout_height="@dimen/alivc_common_size_icon_20"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/alivc_common_margin_5"
+                android:gravity="center"
+                android:src="@mipmap/ic_discover_tab" />
+            <TextView
+                android:id="@+id/alivc_little_tv_discover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/alivc_common_margin_8"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center"
+                android:text="Discover"
+                android:textColor="@color/alivc_common_white"
+                android:textSize="@dimen/alivc_common_font_10" />
+
+            <ImageView
+                android:id="@+id/tab_search_underline"
+                android:layout_width="@dimen/alivc_little_bottom_tab_underline_width"
+                android:layout_height="@dimen/alivc_little_bottom_tab_underline_height"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/alivc_bottom_tab_item_selector" />
+        </FrameLayout>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="@dimen/alivc_little_bottom_tab_more_width"
+            android:layout_height="@dimen/alivc_little_bottom_tab_more_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="-2dp"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/tab_notification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/tab_notification_icon"
+                android:layout_width="@dimen/alivc_common_size_icon_20"
+                android:layout_height="@dimen/alivc_common_size_icon_20"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/alivc_common_margin_5"
+                android:gravity="center"
+                android:src="@mipmap/ic_notification_tab" />
+            <TextView
+                android:id="@+id/alivc_little_tv_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/alivc_common_margin_8"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center"
+                android:text="Notification"
+                android:textColor="@color/alivc_common_white"
+                android:textSize="@dimen/alivc_common_font_10" />
+
+            <ImageView
+                android:id="@+id/tab_notification_underline"
+                android:layout_width="@dimen/alivc_little_bottom_tab_underline_width"
+                android:layout_height="@dimen/alivc_little_bottom_tab_underline_height"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/alivc_bottom_tab_item_selector" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/tab_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/tab_user_icon"
+                android:layout_width="@dimen/alivc_common_size_icon_20"
+                android:layout_height="@dimen/alivc_common_size_icon_20"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/alivc_common_margin_5"
+                android:gravity="center"
+                android:src="@mipmap/ic_profile_tab" />
+
+            <TextView
+                android:id="@+id/alivc_little_tv_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/alivc_common_margin_8"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center"
+                android:text="Profile"
+                android:textColor="@color/alivc_common_white"
+                android:textSize="@dimen/alivc_common_font_10" />
+
+            <ImageView
+                android:id="@+id/tab_user_underline"
+                android:layout_width="@dimen/alivc_little_bottom_tab_underline_width"
+                android:layout_height="@dimen/alivc_little_bottom_tab_underline_height"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/alivc_bottom_tab_item_selector" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_recorder"
+        android:layout_width="@dimen/alivc_little_bottom_tab_more_width"
+        android:layout_height="@dimen/alivc_little_bottom_tab_more_height"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/ic_shoot_home" />
+
+</merge>

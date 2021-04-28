@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f6a23d</color>
+    <color name="colorPrimaryDark">#f6a23d</color>
+    <color name="colorAccent">#f6a23d</color>
+
+    
+
+
+    <color name="cyan">#f6a23d</color>
+
+    
+
+    <color name="maincolor">#f6a23d</color>
+
+    <color name="white">#fff</color>
+    <color name="colorwhite_50">#CCffffff</color>
+    <color name="colorwhite_10">#1Affffff</color>
+    <color name="colorwhite_30">#4Dffffff</color>
+    <color name="black">#000000</color>
+    <color name="graycolor">#D3D3D3</color>
+    <color name="graycolor2">#C5C4C4</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="lightgraycolor">#f2f2f2</color>
+    <color name="darkgray">#93959A</color>
+    <color name="dimgray">#696969</color>
+    <color name="lightblack">#5d5d5d</color>
+
+    <color name="request_verif_text">#DEDFE3</color>
+
+
+    <color name="profile_video_back">#424242</color>
+
+<!--    <color name="black_">#4F5461</color>-->
+
+    <color name="black75">#15161A</color>
+
+
+
+    <color name="darkblack">#2E2E2E</color>
+
+    <color name="black_65">#1E1F24</color>
+
+    <color name="delete_message_bg">#f2f2f2</color>
+    <color name="delete_message_text">#b8b8b8</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="fifty_transparent_black">#802F2F2F</color>
+
+    <color name="redcolor">#ff0008</color>
+
+    <color name="app_color">#c52127</color>
+
+
+    <color name="aliyun_black">#000000</color>
+    <color name="alivc_record_color_home_hint">#FC3D39</color>
+    <color name="alivc_little_bg_download">#B3373D41</color>
+    <color name="alivc_little_bg_player_icon">#aa2e2e2e</color>
+</resources>

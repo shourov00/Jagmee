@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black75"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.jagmee.app.SoundLists.SoundList_Main_A">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:background="@color/black_65"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_65"
+
+                >
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="37dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_white_cross"
+                    android:id="@+id/Goback"
+
+                    android:scaleType="fitStart"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/transparent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Sound"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_centerInParent="true"
+                    android:textSize="15dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+
+
+                    />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/groups_tab"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:tabMode="fixed"
+                app:tabTextColor="@color/white"
+                app:tabSelectedTextColor="@color/cyan"
+                app:tabGravity="fill"
+                app:tabPaddingStart="0dp"
+                app:tabPaddingEnd="0dp"
+                android:background="@color/black75"
+                app:tabTextAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_marginLeft="-1dp"
+                app:tabIndicatorColor="@color/cyan"/>
+
+            <com.jagmee.app.Main_Menu.Custom_ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewpager"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_below="@+id/groups_tab">
+            </com.jagmee.app.Main_Menu.Custom_ViewPager>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

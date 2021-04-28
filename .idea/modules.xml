@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Jagmee.iml" filepath="$PROJECT_DIR$/.idea/Jagmee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AlivcMedia/Jagmee.AlivcMedia.iml" filepath="$PROJECT_DIR$/.idea/modules/AlivcMedia/Jagmee.AlivcMedia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AliyunCrop/Jagmee.AliyunCrop.iml" filepath="$PROJECT_DIR$/.idea/modules/AliyunCrop/Jagmee.AliyunCrop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AliyunCrop/crop/Jagmee.AliyunCrop.crop.iml" filepath="$PROJECT_DIR$/.idea/modules/AliyunCrop/crop/Jagmee.AliyunCrop.crop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AliyunEditor/Jagmee.AliyunEditor.iml" filepath="$PROJECT_DIR$/.idea/modules/AliyunEditor/Jagmee.AliyunEditor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AliyunFileDownLoader/Jagmee.AliyunFileDownLoader.iml" filepath="$PROJECT_DIR$/.idea/modules/AliyunFileDownLoader/Jagmee.AliyunFileDownLoader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AliyunRecorder/Jagmee.AliyunRecorder.iml" filepath="$PROJECT_DIR$/.idea/modules/AliyunRecorder/Jagmee.AliyunRecorder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AliyunRecorder/record/Jagmee.AliyunRecorder.record.iml" filepath="$PROJECT_DIR$/.idea/modules/AliyunRecorder/record/Jagmee.AliyunRecorder.record.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AliyunSVideoBase/Jagmee.AliyunSVideoBase.iml" filepath="$PROJECT_DIR$/.idea/modules/AliyunSVideoBase/Jagmee.AliyunSVideoBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AliyunSvideoMusic/Jagmee.AliyunSvideoMusic.iml" filepath="$PROJECT_DIR$/.idea/modules/AliyunSvideoMusic/Jagmee.AliyunSvideoMusic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AliyunVideoCommon/Jagmee.AliyunVideoCommon.iml" filepath="$PROJECT_DIR$/.idea/modules/AliyunVideoCommon/Jagmee.AliyunVideoCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Jagmee.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Jagmee.app.iml" />
+    </modules>
+  </component>
+</project>

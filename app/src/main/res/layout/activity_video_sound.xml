@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SoundLists.VideoSound_A">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black75">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:background="@color/white">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black75">
+
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="1dp"-->
+                <!--                android:background="@color/darkgray"-->
+                <!--                android:layout_alignParentBottom="true"-->
+                <!--                />-->
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_back"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="fitStart"
+                    android:id="@+id/back_btn"
+                    android:tint="@color/white"
+                    android:background="@color/transparent"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+
+            <RelativeLayout
+                android:id="@+id/video_sound_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/black_65"
+                android:layout_alignParentStart="true"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/video_sound_image"
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+
+                    >
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sound_image"
+                        android:layout_width="120dp"
+                        android:layout_height="140dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:src="@color/profile_video_back"
+                        fresco:placeholderImage="@color/profile_video_back"
+                        fresco:roundedCornerRadius="8dp" />
+
+
+                    <ImageButton
+                        android:id="@+id/play_btn"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_play_icon"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/pause_btn"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_pause_icon"
+                        android:visibility="gone"
+
+                        />
+
+                    <com.github.ybq.android.spinkit.SpinKitView
+                        android:id="@+id/loading_progress"
+                        style="@style/SpinKitView.Large.Wave"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"
+                        app:SpinKit_Color="@color/white"
+
+                        />
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@+id/video_sound_image"
+                    android:layout_margin="10dp"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/sound_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:maxLines="2"
+                        android:text="Name of the sounds"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/description_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textColor="@color/darkgray"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/done"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toLeftOf="@+id/fav_btn"
+                        android:background="@color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_select_rectangle"
+                        android:visibility="gone"
+
+                        />
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/save_btn"
+                android:background="@drawable/d_round_gray25"
+
+                android:orientation="horizontal"
+                android:layout_below="@+id/video_sound_layout"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_my_un_favourite"
+                    android:tint="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save to gallery"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/circular_background_cyan"
+                    android:id="@+id/create_btn"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+
+
+                    >
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:background="@color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_video" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Use this sound"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

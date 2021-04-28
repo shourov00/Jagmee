@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/round">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_launcher"></ImageView>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Report Video"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:gravity="start|center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  Sexual Content"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="   Violent or Repulsive \n  Contant"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:checked="false"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="   Hateful or Dangerous Acts"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:checked="false"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="   Child Abuse"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:checked="false"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radio5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="   Promotes Terrorism"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:checked="false"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="   Copyright Voilation"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:checked="false"
+                    android:textSize="16dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:id="@+id/yes"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:text="YES"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"></TextView>
+
+                <TextView
+                    android:id="@+id/no"
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:text="NO"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:gravity="center"></TextView>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

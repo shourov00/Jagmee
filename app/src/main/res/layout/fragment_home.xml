@@ -1,0 +1,128 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.jagmee.app.Home.Home_F">
+
+  <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+      android:layout_width="match_parent"
+      android:id="@+id/swiperefresh"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/search_layout">
+
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/recylerview"
+      android:layout_marginBottom="5dp"
+      android:background="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:text="Following"
+          android:id="@+id/following_btn"
+          android:textSize="17dp"
+          android:textStyle="bold"
+          android:paddingRight="5dp"
+          android:shadowColor="@color/black"
+          android:shadowDx="1"
+          android:shadowDy="1"
+          android:ellipsize="end"
+          android:shadowRadius="3"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:textColor="@color/graycolor2"
+          android:fontFamily="sans-serif-condensed-medium"
+          />
+
+      <View
+          android:layout_width="2dp"
+          android:layout_height="match_parent"
+          android:background="@color/cyan"
+          android:layout_margin="6dp"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:text="Related"
+          android:id="@+id/related_btn"
+          android:textSize="17dp"
+          android:paddingLeft="5dp"
+          android:textStyle="bold"
+          android:shadowColor="@color/black"
+          android:shadowDx="1"
+          android:shadowDy="1"
+          android:ellipsize="end"
+          android:shadowRadius="3"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:textColor="@color/white"
+          android:fontFamily="sans-serif-condensed-medium"
+          />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="130dp"
+        android:visibility="gone"
+        android:layout_marginTop="28dp"
+        android:id="@+id/upload_video_layout"
+        android:layout_alignParentEnd="true">
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scaleType="centerCrop"
+          android:id="@+id/uploading_thumb"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/black"
+          android:alpha="0.6"/>
+
+      <ImageView
+          android:id="@+id/uploading_icon"
+          android:layout_width="28dp"
+          android:layout_height="28dp"
+          android:scaleType="fitCenter"
+          android:src="@drawable/ic_upload"
+          android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+      android:id="@+id/p_bar"
+      style="?android:attr/progressBarStyleHorizontal"
+      android:layout_width="match_parent"
+      android:layout_height="10dp"
+      android:layout_alignParentBottom="true"
+      android:indeterminateOnly="true"
+      android:visibility="visible"
+      android:indeterminateTint="@color/white"
+      android:secondaryProgress="@android:integer/config_shortAnimTime"/>
+
+  </RelativeLayout>
+
+  </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</FrameLayout>
